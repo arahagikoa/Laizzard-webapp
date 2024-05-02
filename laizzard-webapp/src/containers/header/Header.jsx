@@ -2,7 +2,22 @@ import React from 'react'
 import './header.css'
 const Header = () => {
   return (
-    <div>
+    <div className='liz__header section__padding' id='home'>
+      <div className='liz__header-content'>
+        <h1 className='gradient__text'>
+          Let Us help You automate your work!
+        </h1>
+        <p>
+        We are Laizzard.ai We are start-up that takes reqruitment process to a whole diffrent level.  
+        </p>
+      <div className='liz__header-content__input'>
+        <input type='email' placeholder='Your email adress'/>
+        <button type='button'>
+          Contact Us
+        </button>
+
+      </div>
+      </div>
       
     </div>
   )
