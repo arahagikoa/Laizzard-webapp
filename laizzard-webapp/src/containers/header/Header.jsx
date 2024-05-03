@@ -8,7 +8,7 @@ const Header = () => {
           Let Us help You automate your work!
         </h1>
         <p>
-        We are Laizzard.ai We are start-up that takes reqruitment process to a whole diffrent level.  
+        We are Laizzard.ai We are start-up that takes reqruitment process to a whole diffrent level. We are hard working everyday to implement new solutions and help companies achievieng Their deadlines more effective.
         </p>
       <div className='liz__header-content__input'>
         <input type='email' placeholder='Your email adress'/>

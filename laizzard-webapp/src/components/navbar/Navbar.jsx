@@ -1,15 +1,16 @@
 import React, {useState} from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import './navbar.css'
-import logo from '../../assets/kot.png';
+import {logo} from '../../containers/brand/imports';
 import { TbGalaxy } from 'react-icons/tb';
 
 const Menu = () => (
  <>
         <p><a href='#home'>Home</a></p>
         <p><a href='#features'>Features</a></p>
-        <p><a href='#products'>Our products</a></p>
-        <p><a href='#contact'>Contact Info</a></p>
+        <p><a href='#converter'>CV converter</a></p>
+        <p><a href='#finde'>Find you employee</a></p>
+        <p><a href='#contact'>Contact</a></p>
  </>
 )
 

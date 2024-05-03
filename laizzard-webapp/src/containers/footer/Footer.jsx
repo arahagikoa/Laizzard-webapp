@@ -3,12 +3,12 @@ import './footer.css'
 import { openai } from '../brand/imports';
 const Footer = () => {
   return (
-    <div className='liz__footer section__padding'>
+    <div className='liz__footer section__padding' id='contact'>
       <div className='liz__footer-heading'>
         <h1 className='gradient__text'>Step into the future with AI</h1>
       </div>
       <div className='liz__footer-btn'>
-        <p>Request private access</p>
+        <p><a href='#request'>Request private access</a></p>
       </div>
       <div className='liz__footer-links'>
         <div className='liz__footer-links_logo'>
@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className='liz__footer-links_div'>
           <h4>Links</h4>
-          <p>Linkedin</p>
+          <p><a href='https://www.linkedin.com/in/kamil-krzemiński-913935284/'>Linkedin</a></p>
           <p>Instagram</p>
           <p>Contact</p>
         </div>

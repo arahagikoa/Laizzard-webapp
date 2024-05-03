@@ -24,6 +24,23 @@
     justify-content: flex-end;
     align-items: flex-start;
 }
+.liz__converter-content-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.liz__converter-content-item img {
+    width: 2.5em;
+    height: 2em;
+}
+.liz__converter-content-item h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71E5FF;
+}
 .liz__converter-content h4 {
     font-family: var(--font-family);
     font-weight: 500;
@@ -32,9 +49,7 @@
     color: #71E5FF;
 }
 .liz__converter-content h4:last-child {
-    color: #FF8A71;
-
-
+    color: #71E5FF;
 }
 .liz__converter-content h1 {
     font-family: var(--font-family);
