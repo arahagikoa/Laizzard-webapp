@@ -43,7 +43,13 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.liz__contact-content__form button {
+.form_button-div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.liz__contact-content__form-content button {
     flex: 0.6;
     width: 40%;
     max-width: 230px;

@@ -1,0 +1,32 @@
+.LoadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.782);
+    backdrop-filter: blur(25px); 
+}
+
+.spinner {
+    position: absolute; 
+    top: 42%; 
+    left: 47%; 
+    height: 100px;
+    width: 100px;
+    z-index: 999;
+    border: 5px solid;
+    border-radius: 50%;
+    border-color: #ffffff transparent #ffffff transparent;
+    animation: spin 1.3s ease infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
