@@ -1,0 +1,19 @@
+version: '3'
+services:
+  frontend:
+    image: cvconverter.azurecr.io/front-laiz
+    build:
+      context: ./Fronend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  backend:
+    image: cvconverter.azurecr.io/back-laiz
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    expose:
+      - "5000"
