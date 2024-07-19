@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './contact.css';
 
 import { Loading } from '../../components';
@@ -26,8 +26,19 @@ const Contact = () => {
       [name]: value
     });
   };
-
+  useEffect(() => {
+    const tempEmail = localStorage.getItem('tempEmail');
+    if (tempEmail) {
+      setUserData(prevState => ({
+        ...prevState,
+        businessEmail: tempEmail
+      }));
+      localStorage.removeItem('tempEmail');
+    }
+  }, []);
   const sendUserData = async (e) => {
+
+    console.log(userData);
     e.preventDefault();
     try {
         setisLoading(true);

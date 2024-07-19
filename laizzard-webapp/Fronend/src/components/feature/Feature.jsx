@@ -4,16 +4,16 @@ import { Feat } from '..'
 
 const featuresData = [
   {
-    title: "Improving time efectivness",
-    text: "Out tools help you in performing montonous and time-consumng tasks. You can focus on what's importats and let the AI handle rest"
+    title: "Improve Time Effectiveness",
+    text: "Our tools help you perform monotonous and time-consuming tasks, allowing you to focus on what's important while the AI handles the rest."
   },
   {
-    title: "Do Your tasks better",
-    text: "Our solutions improve quality of work you do. They are specially designed for given tasks and trained to be trusted in what they do"
+    title: "Do Your Tasks Better",
+    text: "Our solutions are designed to enhance the quality of your work. They are specially tailored for specific tasks and are trained to be reliable and efficient."
   },
   {
-    title: "Achive Your goals with less effort",
-    text: "With friendly user interface of out products you can grab Yourself cup of coffee while AI is handling the task"
+    title: "Achieve Your Goals with Less Effort",
+    text: "With the user-friendly interface of our products, you can enjoy a cup of coffee while the AI handles the tasks."
   },
 ]
 
@@ -23,7 +23,8 @@ const Feature = () => {
     <div className='liz__features section__padding' id='features'>
       <div className='liz__features-heading'>
         <h1 className='gradient__text'>
-          Don't let the others take your job! Step into the future of AI automation and take a lead today.
+        Don't Let Others Take Your Job!
+        Step into the future of AI automation and take the lead today.
         </h1>
         <p><a href='#request'>Request access for your company</a></p>
       </div>

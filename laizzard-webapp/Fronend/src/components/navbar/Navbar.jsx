@@ -7,7 +7,10 @@ import { TbGalaxy } from 'react-icons/tb';
 const Menu = () => (
  <>
         <p><a href='#home'>Home</a></p>
+        <p><a href='#WhyUs'>Why Us?</a></p>
         <p><a href='#features'>Features</a></p>
+        <p><a href='#services'>Our services</a></p>
+        <p><a href='#we'>Our Team</a></p>
         <p><a href='#converter'>CV converter</a></p>
         <p><a href='#finde'>Find you employee</a></p>
         <p><a href='#contact'>Contact</a></p>

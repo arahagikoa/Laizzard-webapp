@@ -5,3 +5,5 @@ export {default as Brand} from './brand/Brand';
 export {default as Converter} from './converter/Converter';
 export {default as Lister} from './lister/Lister';
 export {default as Contact} from './contact/Contact';
+export {default as We} from './we/We';
+export {default as Services} from './services/Services'
