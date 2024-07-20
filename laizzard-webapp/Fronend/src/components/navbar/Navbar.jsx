@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import './navbar.css'
-import {logo} from '../../containers/brand/imports';
+import  logo  from './Lizzard_3.png';
 import { TbGalaxy } from 'react-icons/tb';
 
 const Menu = () => (

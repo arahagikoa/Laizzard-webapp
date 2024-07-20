@@ -1,5 +1,5 @@
-import olek from '../../assets/zyzz1.jfif';
-import kamil from '../../assets/zyzz2.jfif';
+import olek from '../../assets/olek.jpg';
+import kamil from '../../assets/zdj.jpg';
 
 export {
     olek,

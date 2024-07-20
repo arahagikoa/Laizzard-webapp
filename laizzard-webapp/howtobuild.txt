@@ -1,0 +1,4 @@
+az login
+az acr login --name cvconverter
+
+Cvconverter

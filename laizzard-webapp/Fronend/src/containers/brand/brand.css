@@ -1,8 +1,26 @@
+.liz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-top: 40px;
+
+}
+
+.liz h1 {
+    font-size: 34px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 45px;
+    text-align: center;
+}
 .liz__brand {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    gap: 30px;
 }
 
 .liz__brand dic {
@@ -17,6 +35,26 @@
 }
 
 .liz__brand-img {
-    height: 80px;
+    height: 70px;
     width: 130px;
+}
+
+.liz__brand-img-deepL {
+    height: 70px;
+    width: 220px;
+}
+
+.liz__brand-img-langC {
+    height: 70px;
+    width: 260px;
+}
+
+.liz__brand-img-azure {
+    height: 140px;
+    width: 160px;
+}
+.liz__brand-img-hug {
+    height: 70px;
+    width: 240px;
+    border-radius: 5%;
 }

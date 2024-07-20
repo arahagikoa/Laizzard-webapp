@@ -8,15 +8,19 @@
     display: flex;
     
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
 
+    text-align: left;
+    color: var(--color-text);
 }
 .liz__lister-content-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 30px;
 
 }
 .liz__lister-content-item img {
@@ -27,9 +31,11 @@
 .liz__lister-content h4 {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 30px;
-    color: #71E5FF;
+    color: var(--color-text);
+    margin-top: 1rem;
+    
 }
 .liz__lister-content h1 {
     font-family: var(--font-family);
@@ -46,7 +52,7 @@
     line-height: 30px;
 
     color: var(--color-text);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .liz__lister-image {

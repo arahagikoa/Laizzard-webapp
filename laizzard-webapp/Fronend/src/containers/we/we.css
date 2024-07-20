@@ -4,7 +4,7 @@
     flex: 1;
 
     justify-content: space-between;
-    gap: 40px;
+    gap: 80px;
 }
 
 .liz__we-content {
@@ -24,7 +24,7 @@
     padding-bottom: 7%;
 }
 
-.liz__we-content p {
+.we-lewo {
     font-family: var(--font-family);
 
     font-size: 21px;
@@ -32,12 +32,22 @@
 
     color: var(--color-text);
     margin-bottom: 2rem;
-
+    text-align: left;
     margin-top: 2rem;
 }
+.we-prawo {
+    font-family: var(--font-family);
 
+    font-size: 21px;
+    line-height: 30px;
+
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    text-align: right;
+    margin-top: 2rem;
+}
 .liz__we-content img {
-    height: 400px;
+    height: 450px;
     width: 325px;
     
 }

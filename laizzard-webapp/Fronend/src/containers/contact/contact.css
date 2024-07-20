@@ -45,10 +45,11 @@
 }
 .form_button-div {
     display: flex;
-
+    color: var(--gradient-text);
     justify-content: center;
     align-items: center;
 }
+
 .liz__contact-content__form-content button {
     flex: 0.6;
     width: 40%;
@@ -62,7 +63,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
-    color: #fff;
+    color: var(--gradient-text);
     cursor: pointer;
     outline: none;
 
@@ -133,8 +134,9 @@
 }
 .liz__contact-content__form-field-content-input textarea {
     width: 100%;
-    height: 100%;
+    height: 60px;
     resize: vertical;
+    text-align: center;
 }
 @media screen and (max-width: 1050px) {
     .liz__contact h1 {

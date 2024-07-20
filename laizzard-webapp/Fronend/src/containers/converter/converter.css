@@ -8,7 +8,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
+    
     margin-right: 2rem;
 }
 
@@ -20,15 +20,21 @@
 .liz__converter-content {
     flex: 1;
     display: flex;
+    
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
+
+    text-align: left;
+    color: var(--color-text);
 }
 .liz__converter-content-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 30px;
 }
 .liz__converter-content-item img {
     width: 2.5em;
@@ -44,12 +50,13 @@
 .liz__converter-content h4 {
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 30px;
-    color: #71E5FF;
+    color: var(--color-text);
+    margin-top: 1rem;
 }
 .liz__converter-content h4:last-child {
-    color: #71E5FF;
+    color: var(--color-text);
 }
 .liz__converter-content h1 {
     font-family: var(--font-family);
@@ -65,7 +72,7 @@
     line-height: 30px;
 
     color: var(--color-text);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 @media  screen  and (max-width: 950px){
     .liz__converter{

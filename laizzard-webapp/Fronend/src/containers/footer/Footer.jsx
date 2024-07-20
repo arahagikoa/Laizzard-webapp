@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import { openai } from '../brand/imports';
+import { logo } from '../brand/imports';
 const Footer = () => {
   return (
     <div className='liz__footer section__padding' id='contact'>
@@ -12,27 +12,25 @@ const Footer = () => {
       </div>
       <div className='liz__footer-links'>
         <div className='liz__footer-links_logo'>
-          <img  src={openai} alt='logo'/>
-          <p>LaizzardAI sp. z.o.o, All Rights Reserved</p>
+          <img  src={logo} alt='logo'/>
+          <p>LaizzardAI, All Rights Reserved</p>
 
         </div>
         <div className='liz__footer-links_div'>
           <h4>Links</h4>
-          <p><a href='https://www.linkedin.com/in/kamil-krzemiński-913935284/'>Linkedin</a></p>
-          <p>Instagram</p>
-          <p>Contact</p>
+          <p><a href='https://www.linkedin.com/company/lizardai/?viewAsMember=true'>Linkedin</a></p>
         </div>
         <div className='liz__footer-links_div'>
           <h4>Company</h4>
-          <p>Terms & Conditions</p>
-          <p>Privacy Policy</p>
-          <p>Contact</p>
+          <p><a href='/terms.txt' download>Terms & Conditions</a></p>
+          <p><a href='/privacy.txt' download>Privacy Policy</a></p>
+
         </div>
         <div className='liz__footer-links_div'>
-          <h4>Get int touch</h4>
-          <p>ul. świętego mikołaja 112</p>
-          <p>000-997</p>
-          <p>biuro_laizzard@lol.pl</p>
+          <h4>Get in touch</h4>
+          <p>ul. Plac Politechniki 1</p>
+          <p>00-661</p>
+          <p>lizardai2024@gmail.com</p>
         </div>
 
       </div>
