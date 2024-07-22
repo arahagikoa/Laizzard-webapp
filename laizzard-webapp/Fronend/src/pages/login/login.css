@@ -1,0 +1,74 @@
+
+.liz__login {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+.liz__login-content_box {
+    display: flex;
+    flex-direction: column;
+    
+    height: 600px;
+    width: 700px;
+
+    border-radius: 10%;
+    
+    background-color: rgba(75, 74, 74, 0.1); 
+    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+
+    position: absolute; 
+    z-index: 1;
+    
+}
+
+.liz__login-content-inputs {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.liz__login-input {
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+
+    height: 75px;
+    z-index: 3;
+}
+.liz__login-input label {
+    margin-top: 15px;
+}
+.liz__login-button button {
+    flex: 0.6;
+    width: 120%;
+    max-width: 230px;
+    min-height: 50px;
+
+    background: #FF4820;
+    border-radius: 5px;
+
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--gradient-text);
+    cursor: pointer;
+    outline: none;
+
+    margin-top: 1.5rem;
+
+    padding: 0 0.5rem;
+    border: none;
+    z-index: 3;
+
+}

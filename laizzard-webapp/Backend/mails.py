@@ -5,28 +5,28 @@ import base64
 
 class Mail:
     def __init__(self) -> None:
-        with open("./laizzard.png", "rb") as img_file:
+        with open("./Lizzard_3.png", "rb") as img_file:
             img_data = img_file.read()
 
         img_base64 = base64.b64encode(img_data).decode("utf-8")
         image_width = 170
         image_height = 150
 
-        self.adminMail = "kmlkrzeminski@gmail.com"
-        self.adminPass = "hxfr tcys zguw mzgw"
+        self.adminMail = "lizardai2024@gmail.com"
+        self.adminPass = "fjno tddy izyv xprn"
         self.respondTemp = f"""
         <p>Szanowny Użytkowniku,</p>
-        <p>Dziękujemy za nawiązanie kontaktu z Laizzard AI</p>
+        <p>Dziękujemy za nawiązanie kontaktu z LizardAI</p>
         <p>Twoja wiadomość została przekazana do zarządu, gdzie zostanie jej poświęcona należyta uwaga</p>
         <p>Jeden z naszych adminów skontaktuje się z Tobą najszybciej jak to będzie możliwe, w celu ustalenia dalszych kroków współpracy możesz w dowolnym momencie zaktualizować swoje dane lub usunąć je z bazy.</p>
         <p>Zachęcamy do zapoznania się z naszymi pozostałymi rozwiązaniami.</p>
         
         <p>Z wyrazami szacunku,<br>
-        <strong>Zespół Laizzard AI</strong><br>
+        <strong>Zespół LizardAI</strong><br>
         <p>Ta wiadomość została wygenerowana automatycznie, prosimy na nią nie odpowiadać.</p>
         <strong>Laizzard AI</strong><br>
-        email: <a href="mailto:biuro@laizzardAI.pl">biuro@laizzardAI.com</a><br>
-        <a href="http://www.youtube.come">www.peopleofquality.pl</a></p>
+        email: <a href="mailto:lizardai2024@gmail.com">lizardai2024@gmail.com</a><br>
+        <a href="https://lizard-ai.com">www.lizard-ai.com</a></p>
         <p><img src="data:image/png;base64,{img_base64}" alt="Image" width="{image_width}" height="{image_height}"></p>
         """
 
@@ -35,7 +35,7 @@ class Mail:
         password = self.adminPass
 
         msg = MIMEMultipart()
-        msg['Subject'] = "Laizzard AI - Dziękujemy za kontakt!"
+        msg['Subject'] = "LizardAI - Dziękujemy za kontakt!"
         msg['From'] = from_email
         msg['To'] = userMail
 
@@ -70,7 +70,6 @@ class Mail:
         <p>Imię: {firstName}</p>
         <p>Numer telefonu: {phoneNumber}</p>
         <p>Wiadomość: {note}</p>
-        <p>LOL</p>
         """
 
         msg.attach(MIMEText(data_text, "html"))
@@ -87,3 +86,10 @@ class Mail:
             print("Error sending email:", str(e))
         finally:
             server.quit()
+
+
+#m = Mail()
+
+#m.get_data_email("asd", "asd", "asd", "asdd")
+
+#m.send_automatic_mail("krzeminski.kamil@interia.eu")
