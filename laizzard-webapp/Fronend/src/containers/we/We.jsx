@@ -18,11 +18,11 @@ const We = () => {
             </h1>
 
             <p className='we-prawo'>
-            I am an Applied Physics student in my third year, specializing in computer physics with a focus on complex systems analysis. I am a software developer with expertise in Convolutional Neural Networks (CNNs) and a solid understanding of generative AI. My experience includes training CNNs for document classification and developing a comprehensive website (peopleofequality.pl) with a database for a company. My main skills encompass:
+            I am an Applied Physics student in my third year, specializing in computer physics with a focus on complex systems analysis. I am a software developer with expertise in Convolutional Neural Networks (CNNs) and a solid understanding of generative AI. My experience includes training CNNs for document classification and developing a comprehensive website (peopleofquality.pl) with a database for a company. My main skills encompass:
 
             Developing and training CNN models,
             Backend and frontend software development,
-            Rigorous software testing,
+            Rigorous software testing.
             In addition to my technical skills, I am passionate about classical music and playing piano(graduated music school), and physics, as evidenced by my achievement as a finalist in the national physics competition.
             </p>
         </div>

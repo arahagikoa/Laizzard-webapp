@@ -8,13 +8,7 @@ from mails import Mail
 
 app = Flask(__name__)
 CORS(app, resources={
-    r"/api/contact": {"origins": ["https://findperfectemployee.azurewebsites.net", "http://localhost:3000"]},
-    r"/uploadJob": {"origins": ["https://findperfectemployee.azurewebsites.net","http://localhost:3000"]},
-    r"/uploadFile": {"origins": ["https://findperfectemployee.azurewebsites.net","http://localhost:3000"]},
-    r"/analyzeJobOffer": {"origins": ["https://findperfectemployee.azurewebsites.net","http://localhost:3000"]},
-    r"/analyzeCVFile": {"origins": ["https://findperfectemployee.azurewebsites.net","http://localhost:3000"]},
-    r"/delete": {"origins": ["https://findperfectemployee.azurewebsites.net","http://localhost:3000"]},
-    r"/download": {"origins": ["https://findperfectemployee.azurewebsites.net","http://localhost:3000"]},
+    r"/api/contact": {"origins": ["https://findperfectemployee.azurewebsites.net", "http://localhost:3000", "https://lizard-ai.com"]}
     }
     )
 

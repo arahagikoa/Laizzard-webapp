@@ -14,6 +14,31 @@ class Mail:
 
         self.adminMail = "lizardai2024@gmail.com"
         self.adminPass = "fjno tddy izyv xprn"
+        self.email = f"""
+                Szanowni Państwo,
+                Nazywamy się LizardAI (https://lizard-ai.com) i chcielibyśmy zaproponować Państwu współpracę biznesową. Specjalizujemy się w implementacji rozwiązań sztucznej inteligencji, wspierających automatyzację procesów biznesowych. Oferujemy również gotowe rozwiązania dostępne jako aplikacje internetowe, szczegółowo opisane na naszej stronie.
+
+                Nasza oferta obejmuje:
+
+                - Spersonalizowane chatboty do obsługi klienta
+                - Trenowanie lokalnych modeli do analizy danych
+                - Tworzenie dedykowanych rozwiązań AI
+                - Konsultacje eksperckie w dziedzinie AI
+
+                Nasze doświadczenie obejmuje:
+                - rok pracy (04.2023 - 04.2024) nad projektem AI dla firmy  https://makeitright.pl, w którym rozwijaliśmy rozwiązanie AI do automatyzacji procesu rekrutacyjnego.
+                - praca (05.2024 - aktualnie) dla firmy https://itsquad.pl na stanowiskach AI software developer, gdzie zajmujemy się trenowaniem lokalnych modeli AI do analizy dokumentów.
+
+                Jesteśmy zespołem młodych, innowacyjnych specjalistów, którzy podchodzą do każdego projektu z kreatywnością i otwartością. Nasza całodobowa dostępność, konkurencyjne ceny oraz niezachwiane zaangażowanie w Państwa projekty wyróżniają nas na rynku. Co więcej, nasze doświadczenie akademickie w dziedzinie fizyki daje nam solidne podstawy do rozwiązywania nawet najbardziej skomplikowanych problemów technicznych.
+
+                Zapraszamy do kontaktu:
+                <a href="mailto:lizardai2024@gmail.com">lizardai2024@gmail.com</a><br>
+
+                Z poważaniem,
+                Zespół LizardAI
+                <p><img src="data:image/png;base64,{img_base64}" alt="Image" width="{image_width}" height="{image_height}"></p>
+
+        """
         self.respondTemp = f"""
         <p>Szanowny Użytkowniku,</p>
         <p>Dziękujemy za nawiązanie kontaktu z LizardAI</p>
@@ -38,7 +63,6 @@ class Mail:
         msg['Subject'] = "LizardAI - Dziękujemy za kontakt!"
         msg['From'] = from_email
         msg['To'] = userMail
-
         msg.attach(MIMEText(self.respondTemp, "html"))
 
         try:
@@ -89,7 +113,7 @@ class Mail:
 
 
 #m = Mail()
-
+#m.create_email_body(img_data)
 #m.get_data_email("asd", "asd", "asd", "asdd")
 
 #m.send_automatic_mail("krzeminski.kamil@interia.eu")

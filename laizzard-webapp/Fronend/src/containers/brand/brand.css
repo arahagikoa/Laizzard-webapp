@@ -40,8 +40,10 @@
 }
 
 .liz__brand-img-deepL {
-    height: 70px;
-    width: 220px;
+    height: 90px;
+    width: 260px;
+
+    border-radius: 6%;
 }
 
 .liz__brand-img-langC {
@@ -57,4 +59,13 @@
     height: 70px;
     width: 240px;
     border-radius: 5%;
+}
+
+
+@media  screen  and (max-width: 450px){
+    .liz__brand {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

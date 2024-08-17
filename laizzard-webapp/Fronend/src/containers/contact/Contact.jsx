@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './contact.css';
+import axios from "axios";
+
+
 
 import { Loading } from '../../components';
 
@@ -37,29 +40,18 @@ const Contact = () => {
     }
   }, []);
   const sendUserData = async (e) => {
-
-    console.log(userData);
     e.preventDefault();
+    setisLoading(true);
     try {
-        setisLoading(true);
-      const response = await fetch('https://laizzardaibackend.azurewebsites.net', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(userData)
-      });
-      const result = await response.json();
-      console.log(result);
-      setUserData(initialState);
-      setisLoading(false);
-
+        const response = await axios.post('https://laizzardaibackend.azurewebsites.net/api/contact', userData);
+        console.log(response.data);  
+        setUserData(initialState);
     } catch (error) {
+        console.error('Error:', error);
+    } finally {
         setisLoading(false);
-      console.error('Error:', error);
     }
-  };
-
+};
   return (
     <div className='liz__contact section__padding' id='request'>
     {isLoading ? <Loading /> : <></>}
